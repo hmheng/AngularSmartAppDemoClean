@@ -4,14 +4,14 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/octet-stream',
-    'Ocp-Apim-Subscription-Key': '825bc78c9cf144e9862de1ce7f9925d7'
+    'Ocp-Apim-Subscription-Key': '<face_api_subscription_key>'
   })
 };
 
 const httpOptionsVerify = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json; charset=utf-8',
-    'Ocp-Apim-Subscription-Key': '825bc78c9cf144e9862de1ce7f9925d7'
+    'Ocp-Apim-Subscription-Key': '<face_api_subscription_key>'
   })
 };
 
