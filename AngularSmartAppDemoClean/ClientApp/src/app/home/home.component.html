@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-sm-4">
+    <video #video id="video" width="320" height="240"></video>
+    <div><button id="snap" (click)="capture()">Snap Photo</button></div>
+    <div><button id="compare" (click)="compare()">Compare Photo</button></div>
+  </div>
+  <div class="col-sm-8">
+    <form #editForm="ngForm">
+      <label class="faceIdDetail" name="txtfaceIdDetail">
+        {{faceIdDetail}}
+      </label>
+      <label class="faceIdentificationDetail" name="txtfaceIdentificationDetail">
+        {{faceIdentificationDetail}}
+      </label>
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <canvas #canvas id="canvas" width="640" height="480" hidden></canvas>
+    <ul>
+      <li *ngFor="let c of captures">
+        <img src="{{ c }}" height="50" />
+      </li>
+    </ul>
+  </div>
+</div>
